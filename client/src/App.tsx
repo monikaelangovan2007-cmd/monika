@@ -4,7 +4,7 @@ import './App.css'
 
 type Student = { id: string; studentName: string; age: string; rollNo: string; dob: string; bloodGroup: string; email: string; address: string; phone: string; department: string; course: string; gender: string; year: string; section: string; backlogs: string; companies: string[] }
 const companies = ['TCS', 'Wipro', 'Infosys', 'Accenture', 'Cognizant', 'HCLTech', 'Capgemini', 'IBM', 'Deloitte', 'Microsoft']
-const API_URL = 'https://student-registration-dmaj.onrender.com'
+const API_URL = 'https://student-registration-dmaj.onrender.com/api'
 const emptyStudent: Omit<Student, 'id' | 'companies'> = { studentName: '', age: '', rollNo: '', dob: '', bloodGroup: '', email: '', address: '', phone: '', department: '', course: '', gender: '', year: '', section: '', backlogs: '' }
 
 function App() {
